@@ -1,0 +1,229 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+ul,
+li{
+  list-style: none;
+  padding: 0;
+}
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+/*--------------------*/
+:root{
+  --color-header: rgba(0,0,0,.6);
+  --color-claro: #fff;
+  --color-oscuro: #000;
+}
+header,
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header{
+  width: 100%;
+  background-color: var(--color-header);
+  position: fixed;
+  top: 0;
+  padding: .5rem;
+  z-index: 1;
+}
+nav{
+  width: 40%;
+}
+ul{
+  justify-content: space-between;
+}
+li a{
+  color: var(--color-claro);
+}
+.logo{
+  width: 100px;
+}
+.wasap{
+  width: 50px;
+}
+
+/**/
+.seccion-two,
+.seccion-three{
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- */
+.seccion-one{
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background: #000 url("https://images.pexels.com/photos/1236720/pexels-photo-1236720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center / cover no-repeat;
+}
+.btn-telefono,
+.book-online{
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  color: var(--color-claro);
+  background-color: var(--color-oscuro);
+  padding: .8rem 2.5rem;
+  transform: translatex(-50%);
+}
+.btn-telefono{
+  top: 70%;
+}
+
+/**/
+.seccion-two{
+/*   border: 2px solid red; */
+}
+.text-bienvenidos{
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.text-la-rapidez,
+.text-direccion{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.text-el-transporte{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.text-servicio-de-taxi{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+.two-btn-telefono{
+  text-align: center;
+}
+.seccion-two-btn-telefono{
+  color: var(--color-claro);
+  background-color: var(--color-oscuro);
+  padding: .8rem 2.5rem;
+}
+.text-servicio-taxi{
+  color: orange;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/*  */
+.div{
+  background: linear-gradient(90deg, #000, rgba(0,0,0,.5));
+  padding: 3rem 0;
+}
+.seccion-three{
+  display: flex;
+  justify-content: space-around;
+}
+.seccion-three article{
+  width: 25%;
+  text-align: center;
+}
+article .info{
+  background-color: #000;
+  color: var(--color-claro);
+  padding: 1rem 2rem;
+}
+.icono{
+  width: 60px;
+  margin: auto;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+  top: -40px;
+}
+
+/* Footer */
+footer{
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media li{
+  margin-right: .5rem;
+}
+.social-media img{
+  width: 30px;
+}
+
+
+@media screen and (max-width: 1024px){
+  nav{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 980px){
+  .seccion-three{
+    flex-wrap: wrap;
+  }
+  .seccion-three article{
+    width: 40%;
+  }
+  header,
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header{
+    width: 100%;
+    background-color: var(--color-header);
+    position: fixed;
+    top: 0;
+    padding: .5rem;
+    z-index: 1;
+  }
+  nav{
+    width: 40%;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+  }
+ 
+ 
+  .wasap{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    background: #000;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .book-online{
+    padding: .8rem 2rem;
+  }
+  
+  .seccion-three article{
+    width: 80%;
+  }
+  
+    footer{
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  small{
+    order: 2;
+  }
+  .social-media li{
+    margin-right: 2rem;
+  }
+  
+  
+}
